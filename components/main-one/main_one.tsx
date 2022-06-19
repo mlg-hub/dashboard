@@ -9,7 +9,7 @@ const MainOne = () => {
                     <h3 className="text-4xl font-bold leading-normal">Cartes de paiement Virtuelle et Physique à l'échelle mondiale.</h3>
                 </p>
                 <p className="leading-loose mt-8">
-                    Fyatu permet aux particuliers la création instantanée et illimitée des cartes de paiement en USD et permet aux entreprises de développer leur business en intégrant notre API de création des cartes bancaires avec leur système.
+                    Fyatu permets aux particuliers la création instantanée et illimitée des cartes de paiement en USD et permet aux entreprises de développer leur business en intégrant notre API de création des cartes bancaires avec leur système.
                 </p>
                 <span className="flex mt-16 justify-start gap-8">
                     <button className="bg-fyatu-primary text-white py-2 px-4 rounded-lg">Ouvrir un compte</button>

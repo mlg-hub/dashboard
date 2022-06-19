@@ -10,7 +10,15 @@ module.exports = {
         'fyatu-light': '#95137b1f',
         'fyatu-light-1': '#95137b0a',
         'fyatu-blue-light': '#0369a10f'
-      }
+      },
+      screens: {
+        'phone': {
+          'max': '300px'
+        },
+        'lgphone': {
+          'max': '600px'
+        },
+      },
     },
   },
   plugins: [],

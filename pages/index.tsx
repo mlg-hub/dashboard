@@ -9,7 +9,12 @@ import Feature, { IFyatuFeature } from '../components/main-one/feature'
 import { faShieldHalved, faGaugeHigh, faHandshakeAngle } from '@fortawesome/free-solid-svg-icons'
 import DashBoard from '../components/main-one/dashboard'
 
-const feactureList: IFyatuFeature[] = [{
+
+const layoutStyle = {
+  marginLeft: '12%',
+  marginRight: '12%',
+}
+export const feactureList: IFyatuFeature[] = [{
   index: 1,
   icon: faShieldHalved,
   title: 'Sécurité',
@@ -35,11 +40,13 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <div className='mx-96'>
-          <Header />
-          <section>
-            <MainOne />
-          </section>
+        <div className='mb-16'>
+          <div style={layoutStyle}>
+            <Header />
+            <section>
+              <MainOne />
+            </section>
+          </div>
         </div>
       </div>
 
@@ -49,12 +56,12 @@ const Home: NextPage = () => {
         <div className='flex gap-14'>
           {
             feactureList.map(x => {
-              return (<Feature key={x.index} icon={x.icon} description={x.description} title={x.title} />)
+              return (<Feature isV2={true} key={x.index} icon={x.icon} description={x.description} title={x.title} />)
             })
           }
         </div>
       </div>
-      <div className="white py-28">
+      <div className="white py-28" style={layoutStyle}>
         <DashBoard />
       </div>
 

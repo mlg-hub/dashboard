@@ -9,7 +9,7 @@ const styleIcon = {
     padding: '10px'
 }
 const DashBoard = () => {
-    return (<div className="flex mx-96 gap-32">
+    return (<div className="flex mb-16 gap-32">
         <div className="flex-1 flex justify-start p-2 bg-slate-200 max-w-md rounded-lg">
             <Image src={"/assets/dashboard1.png"} alt="banner" height={0} width={450} />
         </div>
