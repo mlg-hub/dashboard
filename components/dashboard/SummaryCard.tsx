@@ -29,7 +29,7 @@ const SummaryCard = ({ index }: { index: number }) => {
     const startRow = mapIndexToRow[index];
     return (
 
-        <div className={`${startRow} col-span-3  row-start-2 row-span-full rounded-[20px] border bg-white shadow-2xl shadow-gray-300/70 m-2 p-4`}>
+        <div className={`${startRow} col-span-3  phone:col-span-full row-start-2 row-span-full rounded-[20px] border bg-white shadow-2xl shadow-gray-300/70 m-2 p-4`}>
             <div className="flex flex-col justify-between h-full">
                 <div className="flex justify-between">
                     <span><BsFillCreditCard2BackFill size={48} /></span>

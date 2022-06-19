@@ -13,7 +13,7 @@ module.exports = {
       },
       screens: {
         'phone': {
-          'max': '300px'
+          'max': '700px'
         },
         'lgphone': {
           'max': '600px'

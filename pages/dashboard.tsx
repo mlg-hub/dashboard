@@ -14,7 +14,7 @@ const DashBoard: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="grid grid-cols-12 grid-rows-6 h-screen md:m-2 md:p-4 md:gap-4">
+            <div className=" grid grid-cols-12 grid-rows-6 h-screen m-2 p-4 gap-4">
                 <SideBar />
                 <div className='col-span-8 col-start-2 row-span-2  flex flex-col'>
                     <p className='font-bold text-4xl pt-4'>Welcome to Fyatu's dashboard</p>
@@ -75,7 +75,7 @@ const DashBoard: NextPage = () => {
 
                     </div>
                 </div>
-                <div className=' col-span-3 col-start-10 bg-fyatu-light-1 rounded-[20px] row-span-full flex flex-col gap-72 p-4'>
+                <div className='phone:hidden col-span-3 col-start-10 bg-fyatu-light-1 rounded-[20px] row-span-full flex flex-col gap-72 p-4'>
                     <div className=" py-2 flex justify-evenly font-bold px-8">
                         <BsCalendar size={25} />
                         <BsBell size={25} />
