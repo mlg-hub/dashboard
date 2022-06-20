@@ -40,7 +40,7 @@ const SideBar = () => {
     const size = winWidth / 48;
     const iconList: IconName[] = ['house', 'chart', 'bank', 'clock', 'play', 'group', 'list', 'account'];
     return (
-        <div className='col-span-1 bg-fyatu-primary w-3/4 row-span-full rounded-[20px]'>
+        <div className='col-span-1 bg-fyatu-primary w-3/4 row-span-full rounded-[20px] phone:hidden'>
             <div className="flex flex-col p-2 items-center justify-start place-self-center gap-10">
                 <span className='font-bold italic mt-4 mb-12 text-white text-center text-2xl'>Fyatu</span>
                 {iconList.map((name: IconName, i, []) => <SideIcon key={i} iconName={name} size={size} />)}

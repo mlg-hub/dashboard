@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { BsThreeDotsVertical, BsFillCreditCard2BackFill, BsBell, BsInbox, BsCalendar, BsPerson, BsCaretDownSquare, BsHouse, BsTools } from 'react-icons/bs';
+import { BsBell, BsInbox, BsCalendar, BsPerson, BsCaretDownSquare, BsHouse, BsTools } from 'react-icons/bs';
 import SideBar from '../components/dashboard/SideBar';
 import SummaryCard from '../components/dashboard/SummaryCard';
 
@@ -14,11 +14,11 @@ const DashBoard: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className=" grid grid-cols-12 grid-rows-6 h-screen m-2 p-4 gap-4">
+            <div className=" grid grid-cols-12 grid-rows-6 h-screen md:m-2 md:p-4 gap-4">
                 <SideBar />
                 <div className='col-span-8 col-start-2 row-span-2  flex flex-col'>
                     <p className='font-bold text-4xl pt-4'>Welcome to Fyatu's dashboard</p>
-                    <div className='grid grid-cols-12 grid-rows-6 h-full gap-3'>
+                    <div className='grid grid-cols-12 grid-rows-6 h-full gap-3 phone:flex phone:flex-col'>
                         {[1, 2, 3, 4].map((r, i) => <SummaryCard index={i} key={i} />)}
                     </div>
                 </div>
@@ -37,7 +37,7 @@ const DashBoard: NextPage = () => {
                             <span className=' w-20 bg-red-100 text-red-500 flex justify-center rounded-lg'> - 12%</span>
                         </div>
                     </div>
-                    <div className=' col-span-8  col-start-5 row-span-full bg-sky-400 rounded-[20px] p-8'>
+                    <div className=' col-span-8  col-start-5 row-span-full bg-sky-100 rounded-[20px] p-8'>
                         <div className="flex flex-col">
                             <div className='flex justify-between'>
                                 <p className='text-bold text-2xl'>Revenue</p>
