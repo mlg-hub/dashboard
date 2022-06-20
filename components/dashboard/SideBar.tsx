@@ -1,4 +1,4 @@
-import { ReactElement, useState } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 import { BsBell, BsHouse, BsTools, BsFillBarChartLineFill, BsBank, BsFillClockFill, BsCollectionPlay, BsPeopleFill, BsListCheck, BsCurrencyDollar } from 'react-icons/bs';
 
 type IconName = 'house' | 'chart' | 'bank' | 'clock' | 'play' | 'group' | 'list' | 'account';
@@ -36,8 +36,14 @@ const SideIcon = ({ iconName, size }: { iconName: IconName, size: number }) => {
 //     return iconList.map((name: IconName, i, []) => <SideIcon key={i} iconName={name} />);
 // }
 const SideBar = () => {
-    const [winWidth, setwinWidth] = useState(window.innerWidth);
-    const size = winWidth / 48;
+    const [width, setwinWidth] = useState({ winWidth: 1440 });
+    useEffect(() => {
+
+        setwinWidth({ winWidth: window.innerWidth });
+
+    }, []);
+
+    const size = width.winWidth / 48;
     const iconList: IconName[] = ['house', 'chart', 'bank', 'clock', 'play', 'group', 'list', 'account'];
     return (
         <div className='col-span-1 bg-fyatu-primary w-3/4 row-span-full rounded-[20px] phone:hidden'>
